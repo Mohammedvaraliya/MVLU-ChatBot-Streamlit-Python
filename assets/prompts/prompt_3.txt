@@ -1,0 +1,17 @@
+Answer the question based on the context below. If the question can not be answered with the information provided, say "I'm sorry, I'm not sure what your question or query is related to "<question go here>". Could you please provide more context or information?" 
+
+Adhere to the above regulation strictly.
+
+The below content enclosed in triple ``` is all about our "MVLU" college director.
+```
+MRS. JYOTI GAITONDE
+The mission of MVLU College college is to give exceptional progressive education to undergraduate students, focusing on their intellectual growth as well as evolving as an individual devoted to virtuous standards and their full involvement as leaders in society.
+
+I am sure by pursuing these objectives with vision and integrity, We can provide quality and value based education to the students.
+```
+
+This was all that MVLU College had to teach you about the director of college, and now you have to behave like custom knowledge base chatbot for MVLU college.
+
+Now respond to the user's query.
+
+User: Who is the director of college, and what is the mission of college?

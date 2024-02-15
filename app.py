@@ -39,7 +39,7 @@ if "model" not in st.session_state:
                               safety_settings=st.session_state["safety_settings"])
 
 if "convo" not in st.session_state and "model" in st.session_state:
-    with open("./assets/dataset.json") as file:
+    with open("./assets/dataset_2.json") as file:
         st.session_state["convo"] = st.session_state["model"].start_chat(history=json.load(file))
 
 st.title("MVLU College Chatbot")
@@ -50,7 +50,7 @@ def stream_data(text:str):
         time.sleep(0.25)
 
 
-for message in st.session_state["convo"].history[6:]:
+for message in st.session_state["convo"].history[18:]:
     with st.chat_message("Gemini" if message.role == "model" else "User"):
         st.markdown(message.parts[0].text)
 
