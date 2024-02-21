@@ -2,8 +2,13 @@ import streamlit as st
 import time
 import google.generativeai as genai
 import json
+import os
+from dotenv import load_dotenv
 
-genai.configure(api_key="AIzaSyAd67rIjm4g5SERQ--pryKK1SCCXnE3JwE")
+load_dotenv() 
+api_key = os.getenv("GOOGLE_GEMINI_API_KEY")
+
+genai.configure(api_key=api_key)
 
 if "generation_config" not in  st.session_state:
     st.session_state["generation_config"] = {
