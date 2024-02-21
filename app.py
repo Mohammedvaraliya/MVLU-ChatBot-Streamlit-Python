@@ -52,7 +52,7 @@ st.title("MVLU College Chatbot")
 def stream_data(text:str):
     for word in text.split(" "):
         yield word + " "
-        time.sleep(0.25)
+        time.sleep(0.05)
 
 
 for message in st.session_state["convo"].history[18:]:
@@ -69,6 +69,7 @@ if prompt := st.chat_input("What is up?"):
  
         
     print(st.session_state["convo"].history)
+    print(st.session_state["model"].count_tokens(st.session_state["convo"].history))
 
     with st.chat_message("Gemini"):
         stream = stream_data(response.text)
